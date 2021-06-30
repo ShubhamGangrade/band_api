@@ -4,7 +4,7 @@ class Api::V1::MembersController < ApplicationController
 
   # GET /members
   def index
-    @members = @band.members
+    @members = @band.members.all
 
     # debugger
     render json: @members
